@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nacos-cm
+data:
+  mysql.db.name: "数据库名"
+  mysql.port: "3306"
+  mysql.user: "用户"
+  mysql.password: "密码"
+  mysql.host: "数据库实例"
