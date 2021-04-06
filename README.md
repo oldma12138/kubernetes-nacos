@@ -3,7 +3,11 @@
 * k8s环境使用  
 ```shell
 kubectl apply -f <filename>.yml
-```
+```   
+* 导入数据库文件   
+```shell   
+mysql -uroot -p 库名 < xxxxx.sql   
+```   
 * 连接数据库时远程用户创建  
 ```yaml  
 grant all on 数据库名.* to 用户名@'IP段，例如192.168.0.0/24 %代表所有' identified by '密码'  # 一般是新建用户和授权一起进行的
